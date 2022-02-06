@@ -1,0 +1,129 @@
+.tabs {
+	&__items {
+		background: #2b3040;
+		display: flex;
+		margin-top: 145px;
+	}
+
+	&__item {
+		padding: 33px 0;
+		text-align: center;
+		margin-left: 68px;
+	}
+
+	&__link {
+		font-size: 16px;
+		color: $grey;
+		text-decoration: none;
+		display: block;
+		position: relative;
+		transition: all .1s linear;
+
+		&:hover {
+			color: #fff;
+		}
+
+		&::after {
+			@include pos($b: -33px, $l: 50%, $r: 50%);
+			content: '';
+			height: 2px;
+			background: #fff;
+			transition: all .2s linear;
+
+		}
+		
+		&:hover::after {
+			@include pos($l: -10%, $r: -10%);
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+
+	&__text {
+		position: relative;
+	}
+
+
+	&__content {
+		color: #fff;
+		padding: 60px 47px;
+		background: #212534;
+		display: flex;
+		box-shadow: 0px 23px 57px 0px rgba(0,0,0,0.4);
+	}
+
+	&__img {
+		width: 160px;
+		margin-bottom: 25px;
+	}
+
+	&__visual {
+		width: 32%;
+		text-align: center;
+		margin-right: 40px;
+	}
+
+	&__info {
+		width: 68%;
+		position: relative;
+	}
+
+	&__title {
+		font-size: 32px;
+	}
+
+	&__data {
+		font-size: 14px;
+		margin-bottom: 35px;
+	}
+
+	&__description {
+		color: $grey;
+
+		&--margin {
+			margin-bottom: 55px;
+		}
+	}
+
+	&__buy {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__discount {
+		font-weight: 700;
+		font-size: 12px;
+		color: $yellow;
+	}
+
+	&__price {
+		font-size: 32px;
+	}
+
+	&__button {
+		width: 164px;
+		height: 55px;
+		font-weight: 700;
+		line-height: 55px;
+		background: #13e28d;
+		border-radius: 2px;
+		text-align: center;
+		cursor: pointer;
+
+		&:hover {
+			background: #b75c6d;
+		}
+	}
+	
+	&__ratings-info,
+	&__buy-info {
+		text-align: justify;
+		color: #b7bacd;
+	}
+
+}

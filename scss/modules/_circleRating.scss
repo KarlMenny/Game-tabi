@@ -1,0 +1,6 @@
+.circle-rating {
+	font-family: Lato, sans-serif;
+	@include pos($r: -25px, $t:-25px);
+	width: 120px;
+	height: 120px;
+}
